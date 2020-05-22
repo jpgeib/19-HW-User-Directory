@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import DataTable from "./DataTable";
-import Nav from "./Nav";
+import DataTable from "../DataTable";
+import Nav from "../Nav";
 import API from "../../utils/API";
 import "./style.css";
 

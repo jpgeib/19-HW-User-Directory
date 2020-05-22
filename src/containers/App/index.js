@@ -4,7 +4,7 @@ import Wrapper from "./../../components/Wrapper";
 import Header from "./../../components/Header";
 import "./style.css";
 
-App = () => {
+const App = () => {
     return (
         <div className="App">
             <Wrapper>

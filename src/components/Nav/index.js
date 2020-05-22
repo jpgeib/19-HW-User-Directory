@@ -1,8 +1,8 @@
 import React from "react";
-import SearchBox from "./SearchBox";
+import SearchBox from "../SearchBox";
 import "./style.css";
 
-Nav = ({ handleSearchChange }) => {
+const Nav = ({ handleSearchChange }) => {
     return (
         <nav className="navbar navbar-expand navbar-light bg-light">
             <div className="navbar-collapse row" id="navbarNav">

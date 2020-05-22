@@ -1,8 +1,8 @@
 import React from "react";
-import DataBody from "./DataBody";
+import DataBody from "../DataBody";
 import "./style.css";
 
-DataTable = ({ infoHeadings, users, handleSort }) => {
+const DataTable = ({ infoHeadings, users, handleSort }) => {
     return (
         <div className="datatable mt-5">
             <table
