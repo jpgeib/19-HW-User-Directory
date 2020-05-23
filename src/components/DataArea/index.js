@@ -77,6 +77,7 @@ export default class DataArea extends Component {
                 filteredUsers: results.data.results
             });
         });
+        console.log(this.users);
     }
 
     render() {
