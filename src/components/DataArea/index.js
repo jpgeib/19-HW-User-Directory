@@ -73,8 +73,8 @@ export default class DataArea extends Component {
     componentDidMount() {
         API.getUsers().then(results => {
             this.setState({
-                users: results.data.users,
-                filteredUsers: results.data.users
+                users: results.data.results,
+                filteredUsers: results.data.results
             });
         });
     }
