@@ -15,12 +15,12 @@ function DataBody({ users }) {
     return (
         <tbody>
             {users[0] !== undefined && users[0].name !== undefined ? (
-                users.map(({ login, name, photo, phoneNumber, emailAddress, dateOfBirth }) => {
+                users.map(({ login, name, picture, phone, email, dob }) => {
                     return (
                         <tr key={login.uuid}>
                             <td data-th="Photo" className="align-middle">
                                 <img 
-                                    src={photo.medium}
+                                    src={picture.medium}
                                     alt={"profile image for " + name.first + " " + name.last}
                                     className="img-responsive"
                                 />
@@ -29,23 +29,23 @@ function DataBody({ users }) {
                                 {name.first} {name.last}
                             </td>
                             <td data-th="Phone Number" className="align-middle">
-                                {phoneNumber}
+                                {phone}
                             </td>
                             <td data-th="Email Address" className="align-middle">
-                                <a href={"mailto: " + emailAddress} target="__blank">
-                                    {emailAddress}
+                                <a href={"mailto: " + email} target="__blank">
+                                    {email}
                                 </a>
                             </td>
                             <td data-th="Date of Birth" className="align-middle">
-                                {formatDate(dateOfBirth.date)}
+                                {formatDate(dob.date)}
                             </td>
                         </tr>
                     );
                 })
             ) : (
-                <div>
-
-                </div>
+                <>
+                    
+                </>
             )}
         </tbody>
     );

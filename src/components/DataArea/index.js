@@ -72,12 +72,13 @@ export default class DataArea extends Component {
 
     componentDidMount() {
         API.getUsers().then(results => {
+            console.log(results);
             this.setState({
                 users: results.data.results,
                 filteredUsers: results.data.results
             });
         });
-        console.log(this.users);
+        
     }
 
     render() {
@@ -87,7 +88,7 @@ export default class DataArea extends Component {
                 <div className="data-area">
                     <DataTable 
                         infoHeadings={this.infoHeadings}
-                        users={this.filteredUsers}
+                        users={this.state.filteredUsers}
                         handleSort={this.handleSort}
                     />
                 </div>
